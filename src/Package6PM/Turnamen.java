@@ -22,64 +22,21 @@ public class Turnamen {
         }
         idTurnamen = "Tr"+new Random().nextInt(50);
     }
+    
+    public void ubahStatus(String status){
+        this.status = status;
+    }
     public String getIdTurnamen(){
         return idTurnamen;
     }
     public String getNamaTurnamen(){
         return namaTurnamen;
     }
-    public String getTempat(){
-        return tempat;
-    }
-    public String getPrizePool(){
-        return prizePool;
-    }
-    public String getRules(){
-        return rules;
-    }
-    public String getDeskripsi(){
-        return deskripsi;
-    }
-    public String getStatus(){
-        return status;
-    }
-    public int getSlot(){
-        return slot;
-    }
-    public Date getWaktu(){
-        return waktu;
-    }
-    
     public void setIdTurnamen(String id){
         idTurnamen = id;
     }
     public void setNamaTurnamen(String nama){
         namaTurnamen = nama;
     }
-    public void setTempat(String tempat){
-        this.tempat = tempat;
-    }
-    public void setPrizePool(String prize){
-        prizePool = prize;
-    }
-    public void setRules(String rules){
-        this.rules = rules;
-    }
-    public void setDeskripsi(String desc){
-        deskripsi = desc;
-    }
-    public void setStatus(String status){
-        this.status = status;
-    }
-    public void setSlot(int slot){
-        this.slot = slot;
-    }
-    public void setWaktu(String waktu){
-        try{
-            this.waktu = convert.parse(waktu);
-        }
-        catch(Exception e){
-            System.out.println("Salah Format Tanggal");
-        }
-    }
+   
 }

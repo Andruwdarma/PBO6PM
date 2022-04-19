@@ -45,8 +45,8 @@ public class Driver6PM {
         System.out.println("********** SELAMAT DATANG ***********");
         System.out.println(" ");
         System.out.println("             MENU UTAMA             ");
-        System.out.println("1. Cari Game");
-        System.out.println("2. Cari team");
+        System.out.println("1. List Game");
+        System.out.println("2. List team");
         System.out.println("3. List berita");
         System.out.println("4. Keluar");
         System.out.println("=====================================");

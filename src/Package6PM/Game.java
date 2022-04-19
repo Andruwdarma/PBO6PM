@@ -3,12 +3,12 @@ package Package6PM;
 import java.util.Random;
 
 public class Game {
-    private String idGame, namaGame, jenisGame, namaDeveloper;
+    private String idGame, namaGame, jenisGame, developerGame;
     public Game(){}
     public Game(String nama, String jenis, String dev){
         namaGame = nama;
         jenisGame = jenis;
-        namaDeveloper = dev;
+        developerGame = dev;
         idGame = "G"+new Random().nextInt(50);
     }
     public String getIdGame(){
@@ -20,20 +20,20 @@ public class Game {
     public String getJenisGame(){
         return jenisGame;
     }
-    public String getNamaDeveloper(){
-        return namaDeveloper;
+    public String getDeveloperGame(){
+        return developerGame;
     }
     
     public void setIdGame(String id){
         idGame = id;
     }
-    public void setnamaGame(String nama){
+    public void setNamaGame(String nama){
         namaGame = nama;
     }
     public void setJenisGame(String jenis){
         jenisGame = jenis;
     }
-    public void setNamaDeveloper(String dev){
-        namaDeveloper = dev;
+    public void setDeveloperGame(String dev){
+        developerGame = dev;
     }
 }
